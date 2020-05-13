@@ -3,8 +3,6 @@ import { Card, CardContent, Typography, Grid, CardMedia, } from '@material-ui/co
 import CountUp from 'react-countup';
 import cx from 'classnames';
 
-
-
 import styles from './Cards.module.css';
 import image from './1v.jpg';
 import image1 from './2v.jpg';
@@ -23,10 +21,10 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
           <CardContent>
             <CardMedia
               component="img"
-              alt="Contemplative Reptile"
-              height="140"
               image={image}
-              title="Contemplative Reptile"
+              height="150px"
+              width="150px"
+
             />
             <Typography color="textSecondary" align="center" gutterBottom>
               Infected
@@ -37,7 +35,7 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             <Typography color="textSecondary">
               {new Date(lastUpdate).toDateString()}
             </Typography>
-            <Typography variant="body2" component="p">
+            <Typography variant="body2" component="p" >
               Number of active cases of COVID-19.
             </Typography>
           </CardContent>
@@ -46,10 +44,9 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
           <CardContent>
             <CardMedia
               component="img"
-              alt="Contemplative Reptile"
-              height="140"
               image={image1}
-              title="Contemplative Reptile"
+              height="150px"
+              width="150px"
             />
             <Typography color="textSecondary" align="center" gutterBottom>
               Recovered
@@ -69,10 +66,9 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
           <CardContent>
             <CardMedia
               component="img"
-              alt="Contemplative Reptile"
-              height="140"
               image={image2}
-              title="Contemplative Reptile"
+              height="150px"
+              width="150px"
             />
             <Typography color="textSecondary" align="center" gutterBottom>
               Deaths

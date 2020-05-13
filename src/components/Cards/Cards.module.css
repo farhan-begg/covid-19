@@ -10,36 +10,22 @@
   -moz-box-shadow: 0 0 5px #fff;
   -webkit-box-shadow: 0 0 5px #fff;
   box-shadow: 0px 0px 5px #fff;
+  
 
 
 }
 
 
 .card {
-  box-shadow: 1px 1px 3px #464646;
+  box-shadow: px 1px 3px #464646;
   font-family: 'Lato', sans-serif;
   position: relative;
   background-size: cover;
-
-
   display: inline-block;
   overflow: hidden;
 }
 
-.card .text {
-  max-width: 100%;
-  font-size: 0px;  
-  color: #fff;
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  z-index: 100;
-  transition: all 0.3s ease-out;
-  font-size: 20px;
-  font-weight: lighter;
-  opacity: 0;
-  padding-right: 10px;
-}
+
 
 .card::before {
   content: '';
@@ -86,17 +72,20 @@
   opacity: 1;
 }
 .infected {
-  border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+  border-bottom: 10px solid #205e9b;
 }
 
 .recovered{
-  border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+  border-bottom: 10px solid #63D471;
+
+  ;
+  ;
 
 
 }
 
 .deaths{
-  border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+  border-bottom: 10px solid #A71D31;
 }
 
 @media only screen and (max-width: 770px) {
