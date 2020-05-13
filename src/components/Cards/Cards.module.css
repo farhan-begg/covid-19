@@ -7,14 +7,92 @@
 
 .card {
   margin: 0 2% !important;
+  -moz-box-shadow: 0 0 5px #fff;
+  -webkit-box-shadow: 0 0 5px #fff;
+  box-shadow: 0px 0px 5px #fff;
+
+
 }
 
+
+.card {
+  box-shadow: 1px 1px 3px #464646;
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  background-size: cover;
+
+
+  display: inline-block;
+  overflow: hidden;
+}
+
+.card .text {
+  max-width: 100%;
+  font-size: 0px;  
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 100;
+  transition: all 0.3s ease-out;
+  font-size: 20px;
+  font-weight: lighter;
+  opacity: 0;
+  padding-right: 10px;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  left: 100%;
+  transform: translateX(-100%);
+  border-left-color: transparent; 
+  border: 140px solid #fff;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  opacity: 0.2;
+  pointer-events: none;
+  transition: all 0.3s linear;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(-100%);
+  border: 120px solid;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  pointer-events: none;
+  opacity: 0.2;
+  transition: all 0.3s linear;
+}
+
+
+.card:hover::after {
+  border-top-color: #000;
+  border-right-color: #000;
+  opacity: 0.3;
+  border-width: 220px;
+}
+
+.card:hover::before {
+  border-width: 0;
+  opacity: 0;
+}
+
+.card:hover .text {
+  opacity: 1;
+}
 .infected {
   border-bottom: 10px solid rgba(0, 0, 255, 0.5);
 }
 
 .recovered{
   border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+
+
 }
 
 .deaths{
