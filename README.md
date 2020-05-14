@@ -72,3 +72,4 @@ Responsive COVID 19 tracker
 
 
 ![picture](/src/images/image2.png)
+![picture](/src/images/image3.png)
