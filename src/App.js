@@ -7,6 +7,7 @@ import styles from './App.module.css';
 import image from './images/image.png';
 
 class App extends React.Component {
+  //  declaring the state to create objects 
   state = {
     data: {},
     country: '',
@@ -32,7 +33,7 @@ class App extends React.Component {
         <img className={styles.image} src={image} alt="COVID-19" />
         <Cards data={data} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
-        <Chart data={data} country={country} /> 
+        <Chart data={data} country={country} />
       </div>
     );
   }
